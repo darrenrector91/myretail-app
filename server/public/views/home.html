@@ -1,0 +1,20 @@
+<div class="container">
+    <h1 class="title">My Retail Movies</h1>
+    <!-- api -->
+    <div layout="row" layout-align="center center" class="card">
+        <div layout="row" ng-repeat="apiproduct in retail.api.list">
+            <h3>{{apiproduct.title | json}}</h3>
+        </div>
+        <a href="#!/{{retail.api.list.tcin}}">
+            <md-button on-click="retail.getDetails(retail.api.list.tcin);">Product details</md-button>
+        </a>
+    </div>
+    <!-- pulls everything -->
+    <div ng-repeat="product in retail.movies.list" class="card">
+        <h3>{{product.title | json}}</h3>
+        <a href="#!/{{product.id}}">
+            <md-button on-click="retail.getDetails(movieId);">Product details</md-button>
+        </a>
+    </div>
+
+</div>
