@@ -15,6 +15,7 @@ function connect() {
     }
 
     mongoose.connect(mongoURI, {
+        useMongoClient: true
     });
 
     mongoose.connection.on('error', function (response, err) {
