@@ -17,11 +17,11 @@ function connect() {
     mongoose.connect(mongoURI, {
     });
 
-    mongoose.connection.on('error', function (err) {
+    mongoose.connection.on('error', function (response, err) {
         if (err) {
             console.log("MONGO ERROR: ", err);
         }
-        res.sendStatus(500);
+        response.sendStatus(500);
     });
 
     mongoose.connection.on('open', function () {
