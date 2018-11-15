@@ -4,16 +4,16 @@ A RESTful service that can retrieve product and price details by ID
 
 ## Technologies Used
 
-AngularJs
-Node.js
-MongoDB
-Chai
-Mocha
-Sinon
-ngMock
-Express.js
-Mongoose
-Angular Material
+* AngularJs
+* Node.js
+* MongoDB
+* Chai
+* Mocha
+* Sinon
+* ngMock
+* Express.js
+* Mongoose
+* Angular Material
 
 ## To run a copy of this on your local machine folow the instructions below
 
