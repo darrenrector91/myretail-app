@@ -20,7 +20,7 @@ A RESTful service that can retrieve product and price details by ID
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/en/)
-- [MongoDB Download](https://www.mongodb.com/download-center/community)
+- [MongoDB](https://www.mongodb.com/download-center/community)
 
 ### Installing
 * Clone repository from Github.
