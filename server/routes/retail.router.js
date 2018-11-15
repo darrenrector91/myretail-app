@@ -22,9 +22,9 @@ router.get('/', function (req, res) {
 
 // Data route to APi
 router.get('/api', function (req, res) {
-
+    // API URL
     var apiURL = 'http://redsky.target.com/v2/pdp/tcin/13860428?excludes=taxonomy,price,promotion,bulk_ship,rating_and_review_reviews,rating_and_review_statistics,question_answer_statistics';
-
+    // Request processing
     request(apiURL, function (error, response, body) {
         if (error) {
             console.log('error making Redsky API request');

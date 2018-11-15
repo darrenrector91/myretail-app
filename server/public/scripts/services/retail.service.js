@@ -2,7 +2,7 @@ app.service('RetailService', ['$http', function ($http) {
 
     var self = this;
 
-    // Lists
+    // Lists -  where responses are soassed to and stored before bsing passed to controller for display on DOM
     self.movies = {
         list: []
     };
@@ -15,7 +15,7 @@ app.service('RetailService', ['$http', function ($http) {
         list: []
     };
 
-    // Get all data from dB
+    // GET - service call to database for dummy data
     self.getMovies = function () {
 
         $http({
@@ -25,9 +25,9 @@ app.service('RetailService', ['$http', function ($http) {
             // console.log('response', response);
             self.movies.list = response.data;
         })
-    }
+    }// End GET
 
-    // Get data to display on details page using movie ID
+    // GET - service call to database for data using :id
     self.getDetails = function (movieId) {
 
         $http({
@@ -41,9 +41,9 @@ app.service('RetailService', ['$http', function ($http) {
                 console.log('error in getDetails by id');
             }
         })
-    }
+    }// End GET
 
-    // Get data from Redsky api : id and movie title
+    // GET - service call to Redsky API
     self.getApiMovies = function () {
 
         $http({
@@ -53,6 +53,6 @@ app.service('RetailService', ['$http', function ($http) {
             // console.log('response', response);
             self.api.list = response.data.product.item;
         })
-    }
+    }// End API
 
 }]);

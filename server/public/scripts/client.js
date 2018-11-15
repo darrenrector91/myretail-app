@@ -1,5 +1,6 @@
 var app = angular.module('MyRetailApp', ['ngRoute']);
 
+// Defining routes to URLs
 app.config(function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: '/views/home.html',

@@ -3,8 +3,10 @@
     <!-- api -->
     <div layout="row" layout-align="center center" class="card">
         <div layout="row" ng-repeat="apiproduct in retail.api.list">
+            <!-- product title from API call in JSON format -->
             <h3>{{apiproduct.title | json}}</h3>
         </div>
+        <!-- URL accepting data list -->
         <a href="#!/{{retail.api.list.tcin}}">
             <md-button on-click="retail.getDetails(retail.api.list.tcin);">Product details</md-button>
         </a>
@@ -12,6 +14,7 @@
     <!-- pulls everything -->
     <div ng-repeat="product in retail.movies.list" class="card">
         <h3>{{product.title | json}}</h3>
+        <!-- URL accepting product ID  -->
         <a href="#!/{{product.id}}">
             <md-button on-click="retail.getDetails(movieId);">Product details</md-button>
         </a>
