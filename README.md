@@ -28,7 +28,7 @@ A RESTful service that can retrieve product and price details by ID
 * Run ```npm install --save-dev nodemon``` for instant server refesh on save
 * Open package.json and add "start": "node server/server.js" to the scripts section right below the    "test" line and don't forget the comma after the line above
 * Go the the menu on the side of the filestack and click on the bug icon
-* Click the gear icon then the  dropdown above and select 'Launch Program' and then select 'Nodejs'    from the pop up menu 
+* Click the gear icon then the  dropdown above and select 'Launch Program' and then select 'Nodejs' from the pop up menu 
 * Start mongo ```mongod```
 * Run ```nodemon```
 * Copy and paste ```movies.js``` file to setup basic mock data and uncomment the use at the top of th efile before copying and pasting everything inot the Mopngo Shell
